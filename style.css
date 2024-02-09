@@ -1,0 +1,57 @@
+:root {
+    --prime-color: #6c77d9;
+    --hover-color: #eb9ae4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    width: 280px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.profile-pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    z-index: 1;
+    border: 5px solid #fff;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    transition: 0.5s ease-in-out;
+}
+.card:hover .profile-pic{
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 5px solid var(--prime-color);
+    box-shadow: 0 0 10px #1115;
+    transition: 0.5s ease-in-out ;
+}
